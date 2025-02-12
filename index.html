@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الديناصور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🦖 اضغط على المسافة أو المس الشاشة للقفز</h1>
+    <p id="scoreText">النقاط: <span id="score">0</span></p>
+
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <button id="restartButton" onclick="resetGame()">🔄 إعادة التشغيل</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
