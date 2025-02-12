@@ -7,17 +7,17 @@
 }
 
 body {
-    background-color: #f5e1c0;
+    background-color: #f5e1c0; /* لون يشبه الصحراء */
 }
 
 h1 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 22px; /* تصغير العنوان قليلاً */
     color: #333;
 }
 
 #scoreText {
-    font-size: 18px;
+    font-size: 16px; /* تصغير حجم النقاط قليلاً */
     margin-bottom: 10px;
 }
 
@@ -28,26 +28,31 @@ h1 {
     margin-top: 10px;
 }
 
+/* التحكم بحجم اللعبة */
 canvas {
-    border: 2px solid black;
-    display: block;
-    background: url("desert.jpg") no-repeat center;
+    background-image: url('desert.jpg'); /* صورة الصحراء */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    
+    width: 80vw; /* عرض 80% من عرض الشاشة */
+    max-width: 700px; /* لا يتجاوز 700px على الشاشات الكبيرة */
+    height: 200px; /* تقليل الارتفاع قليلاً */
 }
 
-/* زر إعادة التشغيل */
-#restartButton {
-    display: none; /* إخفاء الزر في البداية */
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    background-color: #ff9800;
+/* تحسين مظهر زر إعادة التشغيل */
+#restartBtn {
+    display: none;
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
     color: white;
+    border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-#restartButton:hover {
-    background-color: #e68900;
+#restartBtn:hover {
+    background-color: #45a049;
 }
